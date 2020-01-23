@@ -1,0 +1,84 @@
+#  ____        _      _____             __ _
+# |  _ \      | |    / ____|           / _(_)
+# | |_) | ___ | |_  | |     ___  _ __ | |_ _  __ _
+# |  _ < / _ \| __| | |    / _ \| '_ \|  _| |/ _` |
+# | |_) | (_) | |_  | |___| (_) | | | | | | | (_| |
+# |____/ \___/ \__|  \_____\___/|_| |_|_| |_|\__, |
+#                                             __/ |
+#                                            |___/
+#
+# This is your ChatBot config file. Here you can customize you bot.
+# For more information on configuring your bot go to https://github.com/TolleyB-J/ChatBot
+# Note: The permlevels are:
+# 1 = Everyone
+# 2 = Moderators
+# 3 = Admins
+# 4 = Owner/Dev Users
+
+[Bot]
+# These are your primary settings for your bot stuff, prefix will only be used as the default prefix.
+'token' = 'TOKEN-HERE' # The token you get from https://discordapp.com/developers/applications/me
+'prefix' = 'd;' # The prefix for your bot. e.g If my prefix was '-' I would do -help
+'ownerid' = 'OWNER-ID-HERE' # Your account id here, this will give you full permissions for the bot.
+
+[Logging]
+# There are your settings of logging of console
+'logfile' = 'latest.log' # The name of your log file
+'debug' = false # Whether or not to enable extra logging in console
+
+#  __  __           _       _         _____             __ _
+# |  \/  |         | |     | |       / ____|           / _(_)
+# | \  / | ___   __| |_   _| | ___  | |     ___  _ __ | |_ _  __ _
+# | |\/| |/ _ \ / _` | | | | |/ _ \ | |    / _ \| '_ \|  _| |/ _` |
+# | |  | | (_) | (_| | |_| | |  __/ | |___| (_) | | | | | | | (_| |
+# |_|  |_|\___/ \__,_|\__,_|_|\___|  \_____\___/|_| |_|_| |_|\__, |
+#                                                             __/ |
+#                                                            |___/
+
+
+[Moderation]
+# The config for the moderation module
+'enable' = true # Whether or not to enable moderation commands
+'banlevel' = 4 # Permlevel for ban command
+'unbanlevel' = 3 # Permlevel for unban command
+'kicklevel' = 3 # Permlevel for kick command
+'lockdownlevel' = 3 # Permlevel for lockdown command
+'mutelevel' = 2 # Permlevel for mute command
+'warnlevel' = 2 # Permlevel for warn command
+'purgelevel' = 2 # Permlevel for mute command
+
+[Fun]
+# NOTE: You can not change the permlevel of the fun commands you may only enable/disable them.
+'enable' = true # Whether or not to enable fun commands
+# Working on adding more options
+
+[Giphy]
+# Enable the giphy module
+# NOTE: IF YOU PLAN TO USE THIS BOT ON MORE THAN 2 SERVERS APPLY FOR A PRODUCTION KEY. FOR MORE INFO GO TO https://github.com/TolleyB-J/ChatBot
+'enable' = false # Whether or not to enable the giphy commands
+'apikey' = 'YOUR-API-KEY-HERE'
+
+[Botcmd]
+# The config for the bot commands
+# This module must be enabled
+'bootgame' = 'Type ;help in chat!' # The bots default game on boot
+
+[Utilities]
+# The config for the utilities commands
+'enable' = true # Whether or not to enable fun commands
+# Working on adding more options
+
+#  ______           _          __    _____             __ _       _
+# |  ____|         | |        / _|  / ____|           / _(_)     | |
+# | |__   _ __   __| |   ___ | |_  | |     ___  _ __ | |_ _  __ _| |
+# |  __| | '_ \ / _` |  / _ \|  _| | |    / _ \| '_ \|  _| |/ _` | |
+# | |____| | | | (_| | | (_) | |   | |___| (_) | | | | | | | (_| |_|
+# |______|_| |_|\__,_|  \___/|_|    \_____\___/|_| |_|_| |_|\__, (_)
+#                                                            __/ |
+#                                                           |___/
+
+
+
+'test' = false # DO NOT EDIT THIS
+'dblEnable' = false # DO NOT EDIT THIS
+'dblAPI' = '' # DO NOT EDIT THIS

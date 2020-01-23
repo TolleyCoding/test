@@ -1,0 +1,33 @@
+{
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 9
+    },
+    "rules": {
+        "no-console": "off",
+        "indent": [
+            "error",
+            4,
+            {
+              "SwitchCase": 1
+            }
+        ],
+        "linebreak-style": "off",
+        "quotes": [
+            "warn",
+            "single"
+        ],
+        "semi": [
+            "warn",
+            "always"
+        ],
+        "no-unused-vars": "warn",
+        "prefer-arrow-callback": "warn",
+        "prefer-const": "warn"
+    }
+}
