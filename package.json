@@ -7,7 +7,7 @@
   "author": "Tolley-BJ",
   "license": "MIT",
   "dependencies": {
-    "chalk": "^2.4.2",
+    "chalk": "^3.0.0",
     "discord.js": "^11.5.1",
     "express": "^4.17.1",
     "toml": "^3.0.0",
