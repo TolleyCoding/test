@@ -1,7 +1,7 @@
 /* eslint no-inner-declarations: 0 */
 const winston = require('winston');
 const fs = require('fs');
-const config = require('../mainDefs').config;
+const config = require('../util/configReader').config;
 var newfile = false;
 
 //Rotates Log File

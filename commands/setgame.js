@@ -1,4 +1,3 @@
-const config = require('../../mainDefs').config;
 exports.run = (client, message, args) => {
     const game = args.join(' ');
     client.user.setActivity(game, { type: 'PLAYING' });
@@ -9,7 +8,7 @@ exports.conf = {
     enabled: false,
     guildOnly: false,
     aliases: [],
-    permLevel: config.Botcmd.setgamelevel
+    permLevel: 3
 };
 
 exports.help = {

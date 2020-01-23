@@ -1,6 +1,6 @@
 exports.run = (client, message) => {
-    const d = new Date();
-    message.reply(`The current bot time is ${d}`);
+    const d = new Date(new Date().toUTCString());
+    message.reply(`The current zulu time is ${d}`);
 };
 
 exports.conf = {
