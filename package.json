@@ -1,15 +1,16 @@
 {
-  "name": "difficult-bot",
+  "name": "tlol-bot",
   "version": "1.0.0",
-  "description": "A bot for the FSE airline difficultJet",
+  "description": "TLOL",
   "main": "app.js",
   "repository": "https://github.com/TolleyB-J/ChatBot",
-  "author": "Tolley-BJ",
+  "author": "TolleyCoding",
   "license": "MIT",
   "dependencies": {
     "chalk": "^3.0.0",
     "discord.js": "^11.5.1",
     "express": "^4.17.1",
+    "request": "^2.88.2",
     "toml": "^3.0.0",
     "uws": "^100.0.1",
     "winston": "^2.4.3"

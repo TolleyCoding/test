@@ -1,33 +1,33 @@
 /* eslint no-inner-declarations: 0 */
-const winston = require('winston');
-const fs = require('fs');
-const config = require('../util/configReader').config;
+const winston = require("winston");
+const fs = require("fs");
+const config = require("../util/configReader").config;
 var newfile = false;
 
 //Rotates Log File
 try {
-    fs.accessSync('etc/passwd', fs.constants.R_OK | fs.constants.W_OK);
+    fs.accessSync("etc/passwd", fs.constants.R_OK | fs.constants.W_OK);
     newfile = true;
-    fs.renameSync('./logs/main.log', './logs/oldmain.log');
+    fs.renameSync("./logs/main.log", "./logs/oldmain.log");
 } catch (err) {
-    console.log('Creating new main.log');
-    if (!fs.existsSync('./logs')){
-        fs.mkdirSync('./logs');
+    console.log("Creating new main.log");
+    if (!fs.existsSync("./logs")){
+        fs.mkdirSync("./logs");
     }
 }
 
 if (config.Logging.debug) {
     function maintest() {
-        winston.loggers.add('main', {
+        winston.loggers.add("main", {
             console: {
-                level: 'silly',
+                level: "silly",
                 colorize: true,
-                label: 'MAIN',
+                label: "MAIN",
                 json: false
             },
             file: {
-                filename: './logs/main.log',
-                level: 'silly',
+                filename: "./logs/main.log",
+                level: "silly",
                 json: false,
                 timestamp: true
             },
@@ -40,16 +40,16 @@ if (config.Logging.debug) {
 } else {
     //Define logger main
     function maintest() {
-        winston.loggers.add('main', {
+        winston.loggers.add("main", {
             console: {
-                level: 'warn',
+                level: "warn",
                 colorize: true,
-                label: 'MAIN',
+                label: "MAIN",
                 json: false
             },
             file: {
-                filename: './logs/main.log',
-                level: 'silly',
+                filename: "./logs/main.log",
+                level: "silly",
                 json: false,
                 timestamp: true
             },
@@ -83,6 +83,6 @@ function devlogtest() {
 
 
 if (newfile) {
-    const main = winston.loggers.get('main');
-    main.info('Hello new log file :)');
+    const main = winston.loggers.get("main");
+    main.info("Hello new log file :)");
 }
